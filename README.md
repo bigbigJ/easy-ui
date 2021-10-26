@@ -1,17 +1,12 @@
-##  下载此组件包请联系管理员
+##  easy-ui
 
-##  mgn-ui
-
-> mgn-ui 是迈基诺前端团队利用VUE框架、JS、LESS等前端技术自主开发的一个私有的前端组件库，采用统一的安装和调用方式，其涵盖了迈基诺所有IT项目中用到的前端组件，分为PC端组件、H5端组件、小程序组件等，每端又详细划分了特殊业务定制组件以及共用组件，详细API查看和使用方式请访问迈基前端网站
-
-##  mgn-ui API
-组件API详情请查看： [迈基诺前端网站](https://192.168.0.79/mygenofe/web/#/login)
+> easy-ui 是利用VUE框架、JS、LESS等前端技术自主开发的一个私有的前端组件库，采用统一的安装和调用方式
 
 ###  安装
-> npm install mgn-ui -S
+> npm install easy-ui -S
 
-###  引入 mgn-ui
-你可以引入整个 mgn-ui，或是根据需要仅引入部分组件。我们先介绍如何引入完整的 mgn-ui。
+###  引入 easy-ui
+你可以引入整个 easy-ui，或是根据需要仅引入部分组件。我们先介绍如何引入完整的 easy-ui。
 
 #### 完整引入：
 
@@ -19,9 +14,9 @@
 
 ```javascript
 import Vue from 'vue'
-import mgnui from 'mgn-ui'
-import 'mgn-ui/lib/theme/index.css'
-Vue.use(mgnui)
+import easyui from 'easy-ui'
+import 'easy-ui/lib/theme/index.css'
+Vue.use(easyui)
 ```
 #### 按需引入：
 
@@ -41,7 +36,7 @@ npm install babel-plugin-component -D
     [
       "component",
       {
-        "libraryName": "mgn-ui",
+        "libraryName": "easy-ui",
         "styleLibrary": {
           "name": "theme",
           "base": false
@@ -55,7 +50,7 @@ npm install babel-plugin-component -D
 
 ```javascript
 import Vue from 'vue'
-import {Button, Select} from 'mgn-ui'
+import {Button, Select} from 'easy-ui'
 
 Vue.component(Button.name, Button)
 Vue.component(Select.name, Select)
@@ -123,7 +118,7 @@ import {
   Message,
   MessageBox,
   Notice
-} from 'mgn-ui'
+} from 'easy-ui'
 
 Vue.use(AnchorNav)
 Vue.use(Avatar)
@@ -184,25 +179,5 @@ Vue.use(Notice)
 使用示例
 
 ```html
-<mgn-button></mgn-button>
+<ea-button></ea-button>
 ```
-
-
-
-
-###  版本说明
-[1.0.0 ---------------------------------------------- 发布组件共29个，涵盖云平台所有的组件](https://192.168.0.79/mygenofe/web/#/pcUpdate?nav=0&pIdex=1&chIndex=-1&version=100)
-
-[1.0.1 ---------------------------------------------- 发布组件共35个，涵盖云平台所有的组件，新增：tree、breadcrumb、reportUpload、steps、progress、menu等6个组件](https://192.168.0.79/mygenofe/web/#/pcUpdate?nav=0&pIdex=1&chIndex=-1&version=101)
-
-[1.0.2 ---------------------------------------------- 发布组件共36个，涵盖云平台所有的组件，新增：upload、dateTimePicker等2个组件，修复：notice、message、input、upload、select、page、itemSearch组件问题，解决tree性能问题](https://192.168.0.79/mygenofe/web/#/pcUpdate?nav=0&pIdex=1&chIndex=-1&version=102)
-
-[1.0.3 ---------------------------------------------- 发布组件共37个，涵盖云平台所有的组件，新增：timeline组件，修复：dateTimePicker select、page、itemSearch、complexSearch等组件问题，优化：input、table、collapse、dialog、radio、upload、progress组件](https://192.168.0.79/mygenofe/web/#/pcUpdate?nav=0&pIdex=1&chIndex=-1&version=103)
-
-[1.0.4 ---------------------------------------------- 发布组件共42个，涵盖云平台所有的组件，新增：avatar组件，messageBox组件、card组件、switch、cascader组件 修复menu、avatar、dialog、tabs、dateTimePicker、verticalTable、select、itemSearch、complexSearch、radio、checkbox、tooltip、list、info、blurSearch组件问题](https://192.168.0.79/mygenofe/web/#/pcUpdate?nav=0&pIdex=1&chIndex=-1&version=104)
-
-[1.0.5 ---------------------------------------------- 发布组件共42个，涵盖云平台所有的组件，修复input、select、itemSearch、dateTimePicker组件问题](https://192.168.0.79/mygenofe/web/#/pcUpdate?nav=0&pIdex=1&chIndex=-1&version=105)
-
-[1.0.6 ---------------------------------------------- 发布组件共55个，涵盖云平台所有的组件，新增transfer、inputNumber、rate、slider、badge、drawer、swiper、backtop、fixnav、lamp、multiplelines、anchornav、editor组件，修复list、vertiacltable、menu、avatar、page、upload、button、dropdown、title、card、reportUpload、switch、progress、blursearch、breadcrumb组件问题](https://192.168.0.79/mygenofe/web/#/pcUpdate?nav=0&pIdex=1&chIndex=-1&version=106)
-
-[1.0.7 ---------------------------------------------- 组件npm包整体架构调整，实现按需加载，表格组件内嵌到npm包中](https://192.168.0.79/mygenofe/web/#/pcUpdate?nav=0&pIdex=1&chIndex=-1&version=107)
